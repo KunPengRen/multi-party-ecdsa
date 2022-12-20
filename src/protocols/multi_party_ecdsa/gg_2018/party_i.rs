@@ -46,7 +46,7 @@ pub struct Parameters {
     pub share_count: u16, //n
 }
 
-#[derive(Clone, Debug, Serialize, Deserialize)]
+#[derive(Clone, Copy,ContiguousMemoryDebug, Serialize, Deserialize)]
 pub struct Keys {
     pub u_i: FE,
     pub y_i: GE,
