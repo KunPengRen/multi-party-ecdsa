@@ -20,6 +20,8 @@ use std::fmt::Debug;
 
 use derivative::Derivative;
 
+use std::prelude::v1::*;
+
 use centipede::juggling::proof_system::{Helgamalsegmented, Witness};
 use centipede::juggling::segmentation::Msegmentation;
 use curv::arithmetic::traits::*;
