@@ -29,8 +29,6 @@ pub use crypto;
 pub use curv;
 pub use secp256k1;
 pub mod protocols;
-pub mod protocols;
-pub mod utilities;
 pub mod utilities;
 
 #[derive(Copy, PartialEq, Eq, Clone, Debug)]
