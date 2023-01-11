@@ -27,7 +27,6 @@ crate-type = ["lib"]
 
 [features]
 default = ["curv/num-bigint","mesalock_sgx"]
-cclst = ["class_group"]
 mesalock_sgx = ["sgx_tstd"]
 
 [dependencies]
@@ -58,10 +57,7 @@ git = "https://github.com/sgx-test/zk-paillier"
 branch = "0.3.12-sgx"
 #default-features = false
 
-[dependencies.class_group]
-git = "https://github.com/KZen-networks/class"
-tag = "v0.5.2"
-optional = true
+
 
 
 #[dev-dependencies]
