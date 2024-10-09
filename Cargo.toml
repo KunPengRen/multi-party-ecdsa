@@ -39,6 +39,7 @@ round-based = { version = "0.1.4", features = [] }
 thiserror = "1.0.23"
 derivative = "2"
 pairing-plus = "0.19"
+ff-zeroize = "0.6.3"
 
 [dependencies.centipede]
 git = "https://github.com/KZen-networks/centipede"
