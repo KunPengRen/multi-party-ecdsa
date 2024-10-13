@@ -15,3 +15,4 @@
 */
 use std::prelude::v1::*;
 pub mod multi_party_ecdsa;
+pub mod threshold_bls;
