@@ -39,4 +39,10 @@ pub enum Error {
     InvalidSig,
     Phase5BadSum,
     Phase6Error,
+    KeyGenMisMatchedVectors,
+    KeyGenBadCommitment,
+    KeyGenInvalidShare,
+    KeyGenDlogProofError,
+    PartialSignatureVerificationError,
+    SigningMisMatchedVectors,
 }

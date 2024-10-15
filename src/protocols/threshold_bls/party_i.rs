@@ -1,5 +1,5 @@
 use crate::Error;
-
+use std::prelude::v1::*;
 use curv::arithmetic::traits::*;
 
 use curv::elliptic::curves::traits::*;
@@ -276,7 +276,7 @@ impl SharedKeys {
     }
 
     // check e(H(m), vk) == e(sigma, g2)
-    pub fn verify(&self, sig: &BLSSignature, x: &[u8]) -> bool {
-        sig.verify(x, &self.vk)
-    }
+    // pub fn verify(&self, sig: &BLSSignature, x: &[u8]) -> bool {
+    //     sig.verify(x, &self.vk)
+    // }
 }
