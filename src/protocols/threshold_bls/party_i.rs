@@ -34,7 +34,7 @@ const SECURITY: usize = 256;
 /// We note that the DKG can probably be biased to some extent, however, we do not find it concerning
 /// for the threshold BLS application.
 
-#[derive(Copy, PartialEq, Clone, Debug)]
+#[derive(Copy, PartialEq, Clone, Debug, Serialize, Deserialize)]
 pub struct Keys {
     pub u_i: FE2,
     pub y_i: GE2,
