@@ -195,8 +195,8 @@ impl SharedKeys {
         GE2::generator() * &self.sk_i
     }
 
-    pub fn partial_sign(&self, x: &[u8]) -> (PartialSignature, GE1) {
-        let H_x = GE1::hash_to_curve(x);
+    pub fn partial_sign(&self, x: &[u8], H_x: GE1) -> (PartialSignature, GE1) {
+        // let H_x = GE1::hash_to_curve(x);
         let sk_bn = ECScalar::to_big_int(&self.sk_i);
         let sk_i_fe1: FE1 = ECScalar::from(&sk_bn);
         let sigma_i = &H_x * &sk_i_fe1;
